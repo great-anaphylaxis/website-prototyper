@@ -1,4 +1,4 @@
-# Mood board
+# Website Prototyper
 
 Another project, or I guess another "code repository" created by [Great Anaphylaxis](https://great-anaphylaxis.web.app/).
 
