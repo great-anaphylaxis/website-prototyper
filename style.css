@@ -101,6 +101,7 @@ hr {
     
     .type1 {
         display: block;
+        padding: 1.5em;
     }
 
     /* container 1 */
@@ -109,7 +110,8 @@ hr {
 
         float: unset;
         margin: auto;
-        margin-top: 10em;
+        margin-top: 25%;
+        margin-bottom: 25%;
 
         text-align: center;
     }
@@ -161,7 +163,16 @@ hr {
 /* responsiveness */
 
 @media (max-width: 1000px) {
+    .type2 {
+        padding: 1.5em;
+    }
+
     /* container 1 */
+    .type2 > .container1 {
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+    
     .type2 > .container1 > h1 {
         font-size: 4em;
     }
@@ -222,14 +233,15 @@ hr {
 @media (max-width: 1000px) {
     .type3 {
         display: block;
+        padding: 1.5em;
     }
 
     /* container 1 */
     .type3 > .container1 {
-        width: 50%;
+        width: 60%;
         height: 40%;
         margin: auto;
-        margin-top: 5em;
+        margin-top: 10%;
     }
 
     .type3 > .container1 > h1 {
@@ -257,9 +269,9 @@ hr {
 /* container 1 */
 
 .type4 > .container1 {
-    width: 75%;
-
     margin: auto;
+    margin-top: 25%;
+    margin-bottom: 25%;
     text-align: center;
 }
 
@@ -274,6 +286,10 @@ hr {
 /* responsiveness */
 
 @media (max-width: 1000px) {
+    .type4 {
+        padding: 1.5em;
+    }
+
     /* container 1 */
     .type4 > .container1 > h1 {
         font-size: 3em;
@@ -297,11 +313,12 @@ hr {
 /* container 1 */
 
 .type5 > .container1 {
-    width: 75%;
     height: 100%;
 
     text-align: center;
     margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .type5 > .container1 > h1 {
@@ -331,6 +348,10 @@ hr {
 /* responsiveness */
 
 @media (max-width: 1000px) {
+    .type5 {
+        padding: 1.5em;
+    }
+
     /* container 1 */
     .type5 > .container1 > h1 {
         font-size: 3em;
