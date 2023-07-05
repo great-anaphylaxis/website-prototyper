@@ -14,9 +14,9 @@
 }
 
 .section {
-    background-image: linear-gradient(var(--color-primary), var(--color-tertiary), var(--color-primary));
+    background-image: linear-gradient(var(--color-quaternary), var(--color-tertiary), var(--color-primary));
     color: var(--color-secondary);
-    height: 80vh;
+    min-height: 80vh;
 }
 
 hr {
@@ -60,17 +60,17 @@ hr {
 .type1 {
     position: relative;
     padding: 3em;
+
+    display: flex;
+    justify-content: center;
+    gap: 4em;
 }
 
 /* container 1 */
 
 .type1 > .container1 {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    transform: translate(-10%, -10%);
-
     width: 40%;
+    height: fit-content;
 }
 
 .type1 > .container1 > h1 {
@@ -84,12 +84,8 @@ hr {
 /* container 2 */
 
 .type1 > .container2 {
-    position: absolute;
-    left: 80%;
-    top: 10%;
-    transform: translate(-80%, -10%);
-
     width: 40%;
+    height: fit-content;
 }
 
 .type1 > .container2 > img {
@@ -102,14 +98,18 @@ hr {
 /* responsiveness */
 
 @media (max-width: 1000px) {
+    
+    .type1 {
+        display: block;
+    }
+
     /* container 1 */
     .type1 > .container1 {
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%, -40%);
-
         width: 75%;
+
+        float: unset;
+        margin: auto;
+        margin-top: 10em;
 
         text-align: center;
     }
@@ -142,13 +142,11 @@ hr {
 /* container 1 */
 
 .type2 > .container1 {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -40%);
-
     width: 75%;
+    height: fit-content;
 
+    margin: auto;
+    margin-top: 10em;
     text-align: center;
 }
 
@@ -180,18 +178,18 @@ hr {
 .type3 {
     position: relative;
     padding: 3em;
+
+    display: flex;
+    justify-content: center;
+    gap: 4em;
 }
 
 /* container 1 */
 
 .type3 > .container1 {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    transform: translate(-10%, -10%);
+    height: 100%;
 
-    width: 40%;
-    height: 70%;
+    flex: 1 1 0;
 }
 
 .type3 > .container1 > img {
@@ -202,13 +200,6 @@ hr {
 }
 
 .type3 > .container1 > h1 {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%);
-
-    width: 140%;
-
     font-size: 2.75em;
     text-align: center;
 }
@@ -217,12 +208,9 @@ hr {
 /* container 2 */
 
 .type3 > .container2 {
-    position: absolute;
-    left: 80%;
-    top: 10%;
-    transform: translate(-80%, -10%);
+    height: 100%;
 
-    width: 30%;
+    flex: 1 1 0;
 }
 
 .type3 > .container2 > p {
@@ -232,36 +220,24 @@ hr {
 /* responsiveness */
 
 @media (max-width: 1000px) {
+    .type3 {
+        display: block;
+    }
+
     /* container 1 */
     .type3 > .container1 {
-        position: absolute;
-        left: 50%;
-        top: 10%;
-        transform: translate(-50%, -10%);
-
         width: 50%;
         height: 40%;
+        margin: auto;
+        margin-top: 5em;
     }
 
     .type3 > .container1 > h1 {
-        position: absolute;
-        left: 50%;
-        top: 140%;
-        transform: translate(-50%, -140%);
-    
         font-size: 2.25em;
         text-align: center;
     }
 
     /* container 2 */
-    .type3 > .container2 {
-        position: absolute;
-        left: 50%;
-        top: 65%;
-        transform: translate(-50%, -65%);
-    
-        width: 70%;
-    }
 
     .type3 > .container2 > p {
         font-size: 1.5em;
@@ -281,13 +257,9 @@ hr {
 /* container 1 */
 
 .type4 > .container1 {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -40%);
-
     width: 75%;
 
+    margin: auto;
     text-align: center;
 }
 
@@ -325,15 +297,11 @@ hr {
 /* container 1 */
 
 .type5 > .container1 {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -40%);
-
     width: 75%;
     height: 100%;
 
     text-align: center;
+    margin: auto;
 }
 
 .type5 > .container1 > h1 {
