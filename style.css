@@ -97,7 +97,7 @@ hr {
 
 /* responsiveness */
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     
     .type1-1 {
         display: block;
@@ -162,7 +162,7 @@ hr {
 
 /* responsiveness */
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .type1-2 {
         padding: 1.5em;
     }
@@ -231,7 +231,7 @@ hr {
 
 /* responsiveness */
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .type1-3 {
         display: block;
         padding: 1.5em;
@@ -286,7 +286,7 @@ hr {
 
 /* responsiveness */
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .type1-4 {
         padding: 1.5em;
     }
@@ -348,7 +348,7 @@ hr {
 
 /* responsiveness */
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .type1-5 {
         padding: 1.5em;
     }
@@ -424,6 +424,7 @@ hr {
     display: flex;
     gap: 1em;
     justify-content: center;
+    flex-grow: 0.2;
 
     padding: 1em;
     width: 25vw;
@@ -459,7 +460,7 @@ hr {
 
 /* responsiveness */
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .type1-6 {
         padding: 1.5em;
     }
