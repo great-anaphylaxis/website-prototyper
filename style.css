@@ -23,6 +23,12 @@ hr {
     border-color: var(--color-secondary);
 }
 
+@media (max-width: 768px) {
+    .section {
+        min-height: 70vh;
+    }
+}
+
 
 
 
@@ -101,12 +107,12 @@ hr {
     
     .type1-1 {
         display: block;
-        padding: 1.5em;
+        padding: 1em;
     }
 
     /* container 1 */
     .type1-1 > .container1 {
-        width: 75%;
+        width: 100%;
 
         float: unset;
         margin: auto;
@@ -117,11 +123,11 @@ hr {
     }
 
     .type1-1 > .container1 > h1 {
-        font-size: 4em;
+        font-size: 2.25em;
     }
     
     .type1-1 > .container1 > p {
-        font-size: 2em;
+        font-size: 1.25em;
     }
 
     /* container 2 */
@@ -164,21 +170,22 @@ hr {
 
 @media (max-width: 768px) {
     .type1-2 {
-        padding: 1.5em;
+        padding: 1em;
     }
 
     /* container 1 */
     .type1-2 > .container1 {
+        width: 100%;
         margin-top: 25%;
         margin-bottom: 25%;
     }
     
     .type1-2 > .container1 > h1 {
-        font-size: 4em;
+        font-size: 2.25em;
     }
     
     .type1-2 > .container1 > p {
-        font-size: 2em;
+        font-size: 1.25em;
     }
 }
 
@@ -234,12 +241,12 @@ hr {
 @media (max-width: 768px) {
     .type1-3 {
         display: block;
-        padding: 1.5em;
+        padding: 1em;
     }
 
     /* container 1 */
     .type1-3 > .container1 {
-        width: 60%;
+        width: 100%;
         height: 40%;
         margin: auto;
         margin-top: 10%;
@@ -253,7 +260,7 @@ hr {
     /* container 2 */
 
     .type1-3 > .container2 > p {
-        font-size: 1.5em;
+        font-size: 1.25em;
         text-align: center;
     }
 }
@@ -293,11 +300,11 @@ hr {
 
     /* container 1 */
     .type1-4 > .container1 > h1 {
-        font-size: 3em;
+        font-size: 2.25em;
     }
     
     .type1-4 > .container1 > p {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 }
 
@@ -355,11 +362,11 @@ hr {
 
     /* container 1 */
     .type1-5 > .container1 > h1 {
-        font-size: 3em;
+        font-size: 2.25em;
     }
     
     .type1-5 > .container1 > p, .type1-5 > .container1 > .list > .item  {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 }
 
@@ -466,6 +473,14 @@ hr {
     }
 
     /* container 1 */
+    .type1-6 > .container1 > h1 {
+        font-size: 2.25em;
+    }
+    
+    .type1-6 > .container1 > p {
+        font-size: 1.25em;
+    }
+
     .type1-6 > .container1 > .list {
         gap: 0.5em;
     }
