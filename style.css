@@ -14,7 +14,7 @@
 }
 
 .section {
-    background-image: linear-gradient(var(--color-quaternary), var(--color-tertiary), var(--color-primary));
+    background-image: linear-gradient(var(--color-primary), var(--color-tertiary), var(--color-primary));
     color: var(--color-secondary);
     min-height: 80vh;
 }
@@ -56,8 +56,8 @@ hr {
 
 
 
-/* section type1 */
-.type1 {
+/* section type1-1 */
+.type1-1 {
     position: relative;
     padding: 3em;
 
@@ -68,27 +68,27 @@ hr {
 
 /* container 1 */
 
-.type1 > .container1 {
+.type1-1 > .container1 {
     width: 40%;
     height: fit-content;
 }
 
-.type1 > .container1 > h1 {
+.type1-1 > .container1 > h1 {
     font-size: 3em;
 }
 
-.type1 > .container1 > p {
+.type1-1 > .container1 > p {
     font-size: 1.5em;
 }
 
 /* container 2 */
 
-.type1 > .container2 {
+.type1-1 > .container2 {
     width: 40%;
     height: fit-content;
 }
 
-.type1 > .container2 > img {
+.type1-1 > .container2 > img {
     width: 100%;
     height: 100%;
     
@@ -99,13 +99,13 @@ hr {
 
 @media (max-width: 1000px) {
     
-    .type1 {
+    .type1-1 {
         display: block;
         padding: 1.5em;
     }
 
     /* container 1 */
-    .type1 > .container1 {
+    .type1-1 > .container1 {
         width: 75%;
 
         float: unset;
@@ -116,16 +116,16 @@ hr {
         text-align: center;
     }
 
-    .type1 > .container1 > h1 {
+    .type1-1 > .container1 > h1 {
         font-size: 4em;
     }
     
-    .type1 > .container1 > p {
+    .type1-1 > .container1 > p {
         font-size: 2em;
     }
 
     /* container 2 */
-    .type1 > .container2 {
+    .type1-1 > .container2 {
         display: none;
     }
 }
@@ -135,15 +135,15 @@ hr {
 
 
 
-/* section type2 */
-.type2 {
+/* section type1-2 */
+.type1-2 {
     position: relative;
     padding: 3em;
 }
 
 /* container 1 */
 
-.type2 > .container1 {
+.type1-2 > .container1 {
     width: 75%;
     height: fit-content;
 
@@ -152,32 +152,32 @@ hr {
     text-align: center;
 }
 
-.type2 > .container1 > h1 {
+.type1-2 > .container1 > h1 {
     font-size: 4em;
 }
 
-.type2 > .container1 > p {
+.type1-2 > .container1 > p {
     font-size: 2em;
 }
 
 /* responsiveness */
 
 @media (max-width: 1000px) {
-    .type2 {
+    .type1-2 {
         padding: 1.5em;
     }
 
     /* container 1 */
-    .type2 > .container1 {
+    .type1-2 > .container1 {
         margin-top: 25%;
         margin-bottom: 25%;
     }
     
-    .type2 > .container1 > h1 {
+    .type1-2 > .container1 > h1 {
         font-size: 4em;
     }
     
-    .type2 > .container1 > p {
+    .type1-2 > .container1 > p {
         font-size: 2em;
     }
 }
@@ -185,8 +185,8 @@ hr {
 
 
 
-/* section type3 */
-.type3 {
+/* section type1-3 */
+.type1-3 {
     position: relative;
     padding: 3em;
 
@@ -197,20 +197,21 @@ hr {
 
 /* container 1 */
 
-.type3 > .container1 {
+.type1-3 > .container1 {
     height: 100%;
 
     flex: 1 1 0;
+    text-align: center;
 }
 
-.type3 > .container1 > img {
-    width: 100%;
+.type1-3 > .container1 > img {
+    width: 80%;
     height: 100%;
 
     object-fit: cover;
 }
 
-.type3 > .container1 > h1 {
+.type1-3 > .container1 > h1 {
     font-size: 2.75em;
     text-align: center;
 }
@@ -218,40 +219,40 @@ hr {
 
 /* container 2 */
 
-.type3 > .container2 {
+.type1-3 > .container2 {
     height: 100%;
 
     flex: 1 1 0;
 }
 
-.type3 > .container2 > p {
+.type1-3 > .container2 > p {
     font-size: 2em;
 }
 
 /* responsiveness */
 
 @media (max-width: 1000px) {
-    .type3 {
+    .type1-3 {
         display: block;
         padding: 1.5em;
     }
 
     /* container 1 */
-    .type3 > .container1 {
+    .type1-3 > .container1 {
         width: 60%;
         height: 40%;
         margin: auto;
         margin-top: 10%;
     }
 
-    .type3 > .container1 > h1 {
+    .type1-3 > .container1 > h1 {
         font-size: 2.25em;
         text-align: center;
     }
 
     /* container 2 */
 
-    .type3 > .container2 > p {
+    .type1-3 > .container2 > p {
         font-size: 1.5em;
         text-align: center;
     }
@@ -260,42 +261,42 @@ hr {
 
 
 
-/* section type4 */
-.type4 {
+/* section type1-4 */
+.type1-4 {
     position: relative;
     padding: 3em;
 }
 
 /* container 1 */
 
-.type4 > .container1 {
+.type1-4 > .container1 {
     margin: auto;
     margin-top: 25%;
     margin-bottom: 25%;
     text-align: center;
 }
 
-.type4 > .container1 > h1 {
+.type1-4 > .container1 > h1 {
     font-size: 3em;
 }
 
-.type4 > .container1 > p {
+.type1-4 > .container1 > p {
     font-size: 1.5em;
 }
 
 /* responsiveness */
 
 @media (max-width: 1000px) {
-    .type4 {
+    .type1-4 {
         padding: 1.5em;
     }
 
     /* container 1 */
-    .type4 > .container1 > h1 {
+    .type1-4 > .container1 > h1 {
         font-size: 3em;
     }
     
-    .type4 > .container1 > p {
+    .type1-4 > .container1 > p {
         font-size: 1.5em;
     }
 }
@@ -304,15 +305,15 @@ hr {
 
 
 
-/* section type5 */
-.type5 {
+/* section type1-5 */
+.type1-5 {
     position: relative;
     padding: 3em;
 }
 
 /* container 1 */
 
-.type5 > .container1 {
+.type1-5 > .container1 {
     height: 100%;
 
     text-align: center;
@@ -321,21 +322,21 @@ hr {
     margin-bottom: 10%;
 }
 
-.type5 > .container1 > h1 {
+.type1-5 > .container1 > h1 {
     font-size: 3em;
 }
 
-.type5 > .container1 > p, .type5 > .container1 > .list > .item  {
+.type1-5 > .container1 > p, .type1-5 > .container1 > .list > .item  {
     font-size: 1.5em;
 }
 
-.type5 > .container1 > .list {
+.type1-5 > .container1 > .list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.type5 > .container1 > .list > .item {
+.type1-5 > .container1 > .list > .item {
     padding: 0.4em 0.75em;
     margin: 0.25em;
     background-color: var(--color-tertiary);
@@ -348,28 +349,28 @@ hr {
 /* responsiveness */
 
 @media (max-width: 1000px) {
-    .type5 {
+    .type1-5 {
         padding: 1.5em;
     }
 
     /* container 1 */
-    .type5 > .container1 > h1 {
+    .type1-5 > .container1 > h1 {
         font-size: 3em;
     }
     
-    .type5 > .container1 > p, .type5 > .container1 > .list > .item  {
+    .type1-5 > .container1 > p, .type1-5 > .container1 > .list > .item  {
         font-size: 1.5em;
     }
 }
 
 /* effects */
 
-.type5 > .container1 > .list > .item:not(:hover) {
+.type1-5 > .container1 > .list > .item:not(:hover) {
     animation: 0.25s ease 0s shrink;
     animation-fill-mode: forwards;
 }
 
-.type5 > .container1 > .list > .item:hover {
+.type1-5 > .container1 > .list > .item:hover {
     animation: 0.25s ease 0s grow;
     animation-fill-mode: forwards;
 }
