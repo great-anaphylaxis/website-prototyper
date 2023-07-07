@@ -343,7 +343,7 @@ hr {
     color: var(--color-secondary);
     text-decoration: none;
     border-radius: 10px;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-secondary);
 }
 
 /* responsiveness */
@@ -372,5 +372,132 @@ hr {
 
 .type1-5 > .container1 > .list > .item:hover {
     animation: 0.25s ease 0s grow;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+/* section type1-6 */
+.type1-6 {
+    position: relative;
+    padding: 3em;
+}
+
+/* container 1 */
+
+.type1-6 > .container1 {
+    height: 100%;
+
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+.type1-6 > .container1 > h1 {
+    font-size: 3em;
+}
+
+.type1-6 > .container1 > p {
+    font-size: 1.5em;
+}
+
+.type1-6 > .container1 > .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+
+    margin-top: 1em;
+}
+
+.type1-6 > .container1 > .list > .item {
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px;
+
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+
+    padding: 1em;
+    width: 25vw;
+
+    text-decoration: none;
+}
+
+/* item container 1 */
+
+.type1-6 > .container1 > .list > .item > .container1 > img {
+    border: 1px solid var(--color-secondary);
+
+    width: 10vh;
+    height: 10vh;
+
+    object-fit: cover;
+}
+
+/* item container 2 */
+
+.type1-6 > .container1 > .list > .item > .container2 {
+    flex: 1 1 0;
+}
+
+.type1-6 > .container1 > .list > .item > .container2 > h1 {
+    color: var(--color-secondary);
+    margin-bottom: 0.25em;
+}
+
+.type1-6 > .container1 > .list > .item > .container2 > p {
+    color: var(--color-secondary);
+}
+
+/* responsiveness */
+
+@media (max-width: 1000px) {
+    .type1-6 {
+        padding: 1.5em;
+    }
+
+    /* container 1 */
+    .type1-6 > .container1 > .list {
+        gap: 0.5em;
+    }
+
+    .type1-6 > .container1 > .list > .item {
+        width: 37.5vw;
+    }
+
+    /* item container 2 */
+    .type1-6 > .container1 > .list > .item > .container1 > img {
+        width: 8vh;
+        height: 8vh;
+    }
+
+    /* item container 2 */
+    .type1-6 > .container1 > .list > .item > .container2 > h1 {
+        font-size: 1.25em;
+        margin-bottom: 0.15em;
+    }
+    
+    .type1-6 > .container1 > .list > .item > .container2 > p {
+        font-size: 1em;
+    }
+}
+
+/* effects */
+
+.type1-6 > .container1 > .list > .item:not(:hover) {
+    animation: 0.15s ease 0s shrink;
+    animation-fill-mode: forwards;
+}
+
+.type1-6 > .container1 > .list > .item:hover {
+    animation: 0.15s ease 0s grow;
     animation-fill-mode: forwards;
 }
