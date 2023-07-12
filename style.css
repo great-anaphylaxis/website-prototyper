@@ -1,6 +1,6 @@
 
 
-/* stuff */
+/* type 1 */
 :root {
     --color-primary: rgb(142, 172, 80);
     --color-secondary: rgb(23, 89, 74);
@@ -425,6 +425,7 @@ hr {
 }
 
 .type1-6 > .container1 > .list > .item {
+    background-color: var(--color-tertiary);
     border: 1px solid var(--color-secondary);
     border-radius: 10px;
 
@@ -515,5 +516,123 @@ hr {
 
 .type1-6 > .container1 > .list > .item:hover {
     animation: 0.15s ease 0s grow;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+/* section type1-7 */
+.type1-7 {
+    position: relative;
+    padding: 3em;
+}
+
+/* container 1 */
+
+.type1-7 > .container1 {
+    text-align: center;
+}
+
+.type1-7 > .container1 > h1 {
+    font-size: 3em;
+}
+
+.type1-7 > .container1 > p {
+    font-size: 1.5em;
+}
+
+.type1-7 > .container1 > .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.type1-7 > .container1 > .list > .item {
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-secondary);
+
+    display: flex;
+    gap: 1em;
+
+    flex-grow: 1;
+    
+    padding: 1em;
+}
+
+/* item container 1 */
+.type1-7 > .container1 > .list > .item > .container1 > img {
+    border: 1px solid var(--color-secondary);
+
+    width: 10vh;
+    height: 10vh;
+
+    object-fit: cover;
+}
+
+/* item container 2 */
+.type1-7 > .container1 > .list > .item > .container2 {
+
+    flex: 1 1 0;
+    text-align: left;
+}
+
+.type1-7 > .container1 > .list > .item > .container2 > h1 {
+    color: var(--color-secondary);
+}
+
+.type1-7 > .container1 > .list > .item > .container2 > .progressbar {
+    border: 1px solid var(--color-secondary);
+    display: inline-block;
+
+    width: 90%;
+    height: 15%;
+}
+
+.type1-7 > .container1 > .list > .item > .container2 > .progressbar > .progress {
+    background-color: var(--color-secondary);
+    width: var(--width);
+    height: 100%;
+}
+
+.type1-7 > .container1 > .list > .item > .container2 > p {
+    width: fit-content;
+    display: inline-block;
+
+    font-size: 1.5em;
+}
+
+/* responsiveness */
+
+@media (max-width: 768px) {
+    .type1-7 {
+        padding: 1.5em;
+    }
+
+    /* container 1 */
+    .type1-7 > .container1 > h1 {
+        font-size: 2.25em;
+    }
+    
+    .type1-7 > .container1 > p {
+        font-size: 1.25em;
+    }
+}
+
+/* effects */
+@keyframes type1-7_progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: --width;
+    }
+}
+.type1-7 > .container1 > .list > .item > .container2 > .progressbar > .progress:hover {
+    animation: 1s cubic-bezier(.66,.26,.29,1.01) 0s type1-7_progress;
     animation-fill-mode: forwards;
 }
