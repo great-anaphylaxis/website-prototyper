@@ -61,7 +61,6 @@ hr {
 
 
 
-
 /* section type1-1 */
 .type1-1 {
     position: relative;
@@ -623,7 +622,7 @@ hr {
 }
 
 /* effects */
-@keyframes type1-7_progress {
+@keyframes type1-7_animation1-1 {
     0% {
         width: 0%;
     }
@@ -632,7 +631,8 @@ hr {
         width: --width;
     }
 }
-.type1-7 > .container1 > .list > .item > .container2 > .progressbar > .progress:hover {
-    animation: 1s cubic-bezier(.66,.26,.29,1.01) 0s type1-7_progress;
+
+.type1-7_animation1-1 {
+    animation: 0.25s cubic-bezier(.66,.26,.29,1.01) 0s type1-7_animation1-1;
     animation-fill-mode: forwards;
 }
