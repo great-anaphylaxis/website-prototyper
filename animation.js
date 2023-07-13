@@ -17,8 +17,21 @@ for (let i = 0; i < type1_7.length; i++) {
 
     for (let j = 0; j < items.length; j++) {
         items[j].addEventListener("mouseenter", e => {
-            addAnimation(items[j].getElementsByClassName("progress")[0], "type1-7_animation1-1");
+            let progress = items[j].getElementsByClassName("progress")[0];
+            let progressBar = items[j].getElementsByClassName("progressbar")[0];
+            
+            addAnimation(progress, "type1-7_animation1-1");
+            addAnimation(progress, "type1-7_animation1-2");
+            addAnimation(progressBar, "type1-7_animation1-3");
         });
+
+        items[j].addEventListener("mouseleave", e => {
+            let progress = items[j].getElementsByClassName("progress")[0];
+            let progressBar = items[j].getElementsByClassName("progressbar")[0];
+
+            removeAnimation(progress, "type1-7_animation1-2");
+            removeAnimation(progressBar, "type1-7_animation1-3");
+        })
 
         items[j].getElementsByClassName("progress")[0].addEventListener("animationend", e => {
             if (e.animationName === "type1-7_animation1-1") {

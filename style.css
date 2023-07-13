@@ -585,10 +585,6 @@ hr {
     text-align: left;
 }
 
-.type1-7 > .container1 > .list > .item > .container2 > h1 {
-    color: var(--color-secondary);
-}
-
 .type1-7 > .container1 > .list > .item > .container2 > .progressbar {
     border: 1px solid var(--color-secondary);
     display: inline-block;
@@ -641,6 +637,20 @@ hr {
 .type1-7_animation1-1 {
     animation: 0.5s cubic-bezier(.66,.26,.29,1.01) 0s type1-7_animation1-1;
     animation-fill-mode: forwards;
+}
+
+.type1-7_animation1-2 {
+    background-color: var(--color-tertiary) !important;
+}
+
+.type1-7_animation1-3 {
+    border-color: var(--color-tertiary) !important;
+}
+
+.type1-7 > .container1 > .list > .item:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+    border-color: var(--color-tertiary);
 }
 
 
