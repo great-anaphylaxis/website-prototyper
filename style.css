@@ -548,6 +548,8 @@ hr {
     gap: 1em;
     justify-content: center;
     flex-direction: column;
+
+    margin-top: 1em;
 }
 
 .type1-7 > .container1 > .list > .item {
@@ -633,6 +635,6 @@ hr {
 }
 
 .type1-7_animation1-1 {
-    animation: 0.25s cubic-bezier(.66,.26,.29,1.01) 0s type1-7_animation1-1;
+    animation: 0.5s cubic-bezier(.66,.26,.29,1.01) 0s type1-7_animation1-1;
     animation-fill-mode: forwards;
 }
