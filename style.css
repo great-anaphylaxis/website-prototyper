@@ -1,16 +1,19 @@
 
 
+/* stuff */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 /* type 1 */
 :root {
     --color-primary: rgb(142, 172, 80);
     --color-secondary: rgb(23, 89, 74);
     --color-tertiary: rgb(211, 208, 79);
     --color-quaternary: rgb(33, 51, 99);
-}
-
-* {
-    margin: 0;
-    padding: 0;
 }
 
 .section {
@@ -487,6 +490,7 @@ hr {
 
     .type1-6 > .container1 > .list > .item {
         width: 37.5vw;
+        flex-grow: 0.5;
     }
 
     /* item container 2 */
@@ -637,4 +641,144 @@ hr {
 .type1-7_animation1-1 {
     animation: 0.5s cubic-bezier(.66,.26,.29,1.01) 0s type1-7_animation1-1;
     animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+
+
+/* section type1-8 */
+.type1-8 {
+    position: relative;
+    padding: 3em;
+}
+
+/* container 1 */
+.type1-8 > .container1 {
+    text-align: center;
+}
+
+.type1-8 > .container1 > h1 {
+    font-size: 3em;
+}
+
+.type1-8 > .container1 > p {
+    font-size: 1.5em;
+}
+
+.type1-8 > .container1 > .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+
+    margin-top: 2em;
+}
+
+.type1-8 > .container1 > .list > .item {
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+
+    display: flex;
+    gap: 2em;
+    
+    width: 90%;
+    
+    min-height: 40vh;
+    padding: 1em;
+
+    text-decoration: none;
+}
+
+/* item container 1 */
+.type1-8 > .container1 > .list > .item > .container1 {
+    flex: 1 1 0;
+}
+
+.type1-8 > .container1 > .list > .item > .container1 > img {
+
+    width: 100%;
+    height: 40vh;
+
+    object-fit: cover;
+}
+
+/* item container 2 */
+.type1-8 > .container1 > .list > .item > .container2 {
+    flex: 1 1 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.type1-8 > .container1 > .list > .item > .container2 > h1 {
+    text-align: left;
+    margin-bottom: 0.25em;
+}
+
+.type1-8 > .container1 > .list > .item > .container2 > p {
+    text-align: left;
+
+    flex: 1 1 0;
+}
+
+.type1-8 > .container1 > .list > .item > .container2 > .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+
+    margin-top: 0.5em;
+}
+
+.type1-8 > .container1 > .list > .item > .container2 > .list > .item {
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+
+    padding: 0.25em;
+}
+
+/* responsiveness */
+
+@media (max-width: 768px) {
+    .type1-8 {
+        padding: 1.5em;
+    }
+
+    /* container 1 */
+    .type1-8 > .container1 > h1 {
+        font-size: 2.25em;
+    }
+    
+    .type1-8 > .container1 > p {
+        font-size: 1.25em;
+    }
+
+    .type1-8 > .container1 > .list > .item {
+        flex-direction: column;
+    }
+}
+
+/* effects */
+.type1-8_animation1-1 {
+    border-color: var(--color-tertiary) !important;
+}
+
+.type1-8 > .container1 > .list > .item:not(:hover) {
+    animation: 0.15s ease 0s shrink;
+    animation-fill-mode: forwards;
+}
+
+.type1-8 > .container1 > .list > .item:hover{
+    animation: 0.15s ease 0s grow;
+    animation-fill-mode: forwards;
+
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+    border-color: var(--color-tertiary);
 }
