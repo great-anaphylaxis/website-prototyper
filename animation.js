@@ -1,3 +1,48 @@
+// scrolling
+let navbar = document.querySelector('header');
+let pastScrollPercent;
+let scrollPercent = getScrollPercent();
+
+function getScrollPercent() {
+    return ((document.documentElement.scrollTop || document.body.scrollTop) / ((document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight)) * 100;
+}
+
+window.addEventListener('scroll', e => {
+    // get current scroll percent
+    scrollPercent = getScrollPercent();
+
+    // how much the scroll progress has changed since the past scroll
+    let scrollDelta = scrollPercent - pastScrollPercent;
+
+    // if no scroll
+    if (scrollDelta == 0) {
+
+    }
+
+    // if scrolling up
+    else if (scrollPercent > pastScrollPercent) {
+        // to avoid executing without actually scrolling
+        if (pastScrollPercent > 0) {
+            navbar.style.animation = "0.5s ease 0s 1 normal forwards running navbar1_hide";
+        }
+    }
+
+    // if scrolling down
+    else if (scrollPercent < pastScrollPercent) {
+        // to avoid executing without actually scrolling
+        if (pastScrollPercent > 0) {
+            navbar.style.animation = "0.5s ease 0s 1 normal forwards running navbar1_show";
+        }
+    }
+
+    // set the past scroll percent to current scroll percent
+    pastScrollPercent = scrollPercent;
+});
+
+
+
+
+
 // for advanced animations
 
 function addAnimation(element, className) {
