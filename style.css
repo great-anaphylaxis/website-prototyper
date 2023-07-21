@@ -41,14 +41,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-.type1-5 > .container1 > .list > .item:hover {
-    animation: 0.25s ease 0s grow;
-    animation-fill-mode: forwards;
-
-    background-color: var(--color-secondary);
-    color: var(--color-tertiary);
-}
-
 ::selection {
     color: var(--color-tertiary);
     background-color: var(--color-quaternary);
