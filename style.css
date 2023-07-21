@@ -10,10 +10,10 @@
 
 /* type 1 */
 :root {
-    --color-primary: rgb(142, 172, 80);
-    --color-secondary: rgb(23, 89, 74);
-    --color-tertiary: rgb(211, 208, 79);
-    --color-quaternary: rgb(33, 51, 99);
+    --color-primary: rgb(142, 172, 80);     /* light */
+    --color-secondary: rgb(23, 89, 74);     /* dark */
+    --color-tertiary: rgb(211, 208, 79);    /* lightest */
+    --color-quaternary: rgb(33, 51, 99);    /* darkest */
 }
 
 .section {
